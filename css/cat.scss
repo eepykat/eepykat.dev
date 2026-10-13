@@ -1,0 +1,514 @@
+// -----------------------
+//       VARIBLES        -
+// -----------------------
+$font: "Inclusive Sans", sans-serif;;
+$background: #1C1C1D;
+$purple: #DABFFF;
+$offwhite: #D9D9D9;
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $background;
+    color: $offwhite;
+    font-family: $font;
+}
+
+.containContent {
+    margin: auto;
+    max-width: 800px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+// ---------------
+// - Reuse these -
+// ---------------
+.active {
+    color: $purple;
+}
+.readMore {
+    color: #e0caff;
+
+    float: inline-end;
+}
+.welcome-text-medium {
+    font-size: 42px;
+}
+.text-small {
+    color: $offwhite;
+    font-size: 15px;
+}
+.purple-small {
+    color: $purple;
+    font-size: 36px;
+}
+.center {
+    text-align: center;
+}
+// -----------------------
+//       BUTTONS         -
+// -----------------------
+.button-box {
+    padding-top: 20px;
+    .cat-buttons {
+        width: 200px;
+        display: inline-block;    
+        color: $offwhite;
+        text-align: center;
+        text-decoration: none;
+        font-size: 24px;
+        padding: 25px 25px;
+        background-color: #ffffff00;
+        border: 2px solid $offwhite;
+        border-radius: 25px;
+        box-shadow: 0 9px $offwhite;
+        &:active {
+            color: #a8a8a8;
+            box-shadow: 0 5px #a8a8a8;
+            transform: translateY(4px);
+        }
+    }
+}
+
+
+// -----------------------
+//       SECTION         -
+// -----------------------
+section {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    h2 {
+        font-size: 42px;
+        padding-bottom: 20px;
+    }
+}
+// -----------------------
+//       Bubble          -
+// -----------------------
+.dynamicBubble {
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 60px;
+    .previewBubble {
+        max-width: 300px;
+        min-width: 100px;
+        border: 2px solid $offwhite;
+        border-radius: 25px;
+        padding-top: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        h3 {
+            margin-bottom: 0;
+            font-size: 36px;
+        }
+        .post-preview {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
+// -----------------------
+//       NAVBAR          -
+// -----------------------
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 72px;
+    top: 0;
+    width: 100%;
+    // This makes the mobile menu function
+    #navLinks {
+        overflow: hidden;
+        width: 72px;
+        background-color: #262627;
+    }
+    ul {
+        padding-left: 0;
+        overflow: hidden;
+        list-style-type: none;
+        margin-bottom: 0;
+        li {
+            padding-left: 20px;
+            margin-top: 10px;
+            padding-bottom: 5px;
+        }
+        a {
+            font-size: 42px;
+            text-decoration: none;
+            color: white;
+        }
+    }
+    // Hamburger Menu for Mobile
+    .icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: $purple;     
+        font-size: 72px;
+    }
+}
+// -----------------------
+//       TOP             -
+// -----------------------
+#top {
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    .welcome-display {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 42px;
+        }
+    }
+    .cta-click {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+// -----------------------
+//       Project         -
+// -----------------------
+#projectPreview {
+    border-top: 5px solid $purple;
+    padding-bottom: 50px;
+    .projectGrid {
+        display: grid;
+        place-content: center;
+        gap: 25px;
+        .previewBubble {
+        max-width: 300px;
+        min-width: 100px;
+        border: 2px solid $offwhite;
+        border-radius: 25px;
+        padding-top: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        h3 {
+            margin-bottom: 0;
+            font-size: 36px;
+        }
+        .post-preview {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    }
+}
+
+
+
+
+#projectPage {
+    img {
+        width: 100%;
+        height: auto;
+    }
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .projectInfo {
+        h2 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+// -----------------------
+//       Skills          -
+// -----------------------
+#skills {
+    border-top: 5px solid $purple;
+    h2 {
+        text-align: right;
+        padding-bottom: 0;
+
+    }
+    #skill-collection {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        padding-bottom: 40px;
+        .randomButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            border: none;
+            width: 120px;
+            height: 50px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #006deb;
+            border-radius: 15px;
+            box-shadow: 0 9px #006deb83;
+            &:active {
+                color: #e6e6e683;
+                box-shadow: 0 9px rgb(29, 29, 29);
+                transform: translateY(4px);
+            }
+            p {
+                border-radius: 10%;
+                color: $offwhite;
+                text-shadow: 0 0 20px $background;
+                padding: 3px;
+            }
+        }
+    }
+}
+// -----------------------
+//       About Me        -
+// -----------------------
+#aboutMe {
+    border-top: 5px solid $purple;
+    h2 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        text-align: right;
+    }
+    article {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img {
+            padding-bottom: 0;
+            border: #D9D9D9;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        p {
+            padding-top: 0;
+            max-width: 250px;
+            font-size: 18px;
+        }
+    }
+}
+// -----------------------
+//       BLOG            -
+// -----------------------
+#blogPreview {
+    border-top: 5px solid $purple;
+}
+.blogBubble {
+    max-width: 300px;
+    min-width: 100px;
+    min-height: 150px;
+    border: 2px solid $offwhite;
+    border-radius: 25px;
+    padding-top: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    h3 {
+        margin-bottom: 0;
+        font-size: 36px;
+    }
+    .post-preview {
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+#blogPage {
+    padding-top: 100px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .dynamicBlog {
+        h2 {
+            font-size: 32px;
+            a {
+                color: $purple;
+                text-decoration: none;
+            }
+        }
+        p {
+            padding-left: 20px;
+            font-size: 18px;
+        }
+    }
+}
+// -----------------------
+//         FOOTER       -
+// -----------------------
+footer {
+    border-top: 5px solid $purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $background;
+    width: 100%;
+    height: 15vh;
+    a {
+        font-size: 26px;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+// ---------------------------------------------
+// Special usecase of Screens Smaller then 550 -
+// ---------------------------------------------
+@media only screen and (max-width: 550px) {
+
+    #top {
+        margin-top: 5vh;
+        margin-bottom: 8vh;
+        .welcome-display {
+            h1 {
+                font-size: 36px;
+            }
+            img {
+                display: none;
+            }
+        }
+        .cta-click {
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+    }
+    #skills {
+        h2 {
+            text-align: center;
+        }
+    }
+    h2 {
+        text-align: center;
+    }
+    #aboutMe {
+        h2 {
+            text-align: center;
+            padding-bottom: 20px;
+            margin: 0;
+        }
+        article {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                padding-bottom: 0;
+            }
+            p {
+                margin: 0;
+                max-width: 272px;
+            }
+        }
+    }
+} // End
+// -----------------------
+// Grid 2 Columns        -
+// -----------------------
+@media only screen and (min-width: 600px) {
+    #projectPreview {
+        .projectGrid {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+// -----------------------
+// Tablets and Desktop   -
+// -----------------------
+@media only screen and (min-width: 800px) {
+nav {
+    top: 0;
+    width: 100%;
+    #navLinks {
+        display: block;
+        width: 100%;
+        height: 72px;
+        margin-top: 0;
+    }
+    ul {
+        padding-left: 0;
+        padding-top: 0;
+        overflow: hidden;
+        list-style-type: none;
+        li {
+            display: inline-block;
+            padding-left: 50px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        a {
+            font-size: 42px;
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .icon {
+        display: none;
+    }
+}
+    .dynamicBubble {
+        flex-direction: row;
+    }
+} // End of Tablet
+
+// --------------------------------------------------------
+// Only have the navbar animations work on small screens  -
+// --------------------------------------------------------
+@media only screen and (max-width: 800px) {
+    #navLinks.menu-in {
+        animation: menu-in 0.5s ease-in forwards;
+    }
+    #navLinks.menu-out {
+        animation: menu-out 0.3s ease-in forwards;
+    }
+    // Keyframes
+    @keyframes menu-in {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 140px;
+    }
+    }
+
+    @keyframes menu-out {
+    0% {
+        width: 140px;
+    }
+
+    100% {
+        width: 0px;
+    }
+}
+} // End of Navbar animation

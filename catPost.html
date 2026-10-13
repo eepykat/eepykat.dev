@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Blog: My Cats</title>
+    <!--SEO-->
+    <meta name="description" content="The Portfolio!">
+
+	<!-- Load Normalize-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/cat.css">
+</head>
+<body>
+    <nav>
+        <ul id="navLinks">
+            <li><a href="index.html">home</a></li>
+            <li><a href="blog.html">blog</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <!-- Contain all content excluding navbar and footer -->
+    <div id="container">
+        <section id="projectPage">
+            <!-- This div main purpose is to keep the content somewhat in the center while allowing some things to take 100% of the width of the display -->
+            <div class="containContent">
+                <h1>My Cats</h1>
+                <div class="dynamicBubble">
+                    <article class="projectInfo">
+                        <p>
+                            Here's a post dedicated to sharing some info
+                            about my cats and some pictures!
+                        </p>
+
+                        <h2 class="center">Lexi</h2>
+                        <p>
+                            Lexi is one of my oldest cats, and she loves to steal my chair right after I get up. You can find her loafing in the hallway, or sleeping in a chair somewhere.
+                        </p>
+                        <img alt="Image of lexi the cat standing on a cat tree" height="1000" width="641" src="images/lexi.webp">
+
+                        
+                        <h2 class="center">Lynx</h2>
+                        <p>
+                            Lynx is Lexi's Brother, you can find him where ever Lexi is. He will also come running from across the house if he hears you and wants attention and pets. He will also jump on anything to get attention.
+                        </p>
+                        <img alt="Image of lynx the cat laying on a chair" height="1000" width="991" src="images/lynx.webp">
+                        <p class="center">Lynx</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="aboutMe">
+            <div class="containContent">
+                <h2>about me</h2>
+                <article class="dynamicBubble">
+                    <img alt="Image of kat" height="128" width="128" src="https://avatars.githubusercontent.com/u/168898505?v=4">
+                    <p>Hi! I love Web Design, working with computers, and just all around creating things</p>
+                </article>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <img alt="Image of a cat emoji that is white" src="images/cat.png" width="64" height="64">
+        <a href="https://github.com/eepykat">github</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
