@@ -3,12 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet" type="text/css">
-    <title>eepykat.dev</title>
+    <title>Portfolio</title>
+    <!--SEO-->
+    <meta name="description" content="The Portfolio!">
+	<!-- Load Normalize-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/cat.css">
 </head>
 <body>
-    <h1>Hello, I'm Kat</h1>
-    <p>There is not too much here at the moment.</p>
-    <a href="https://github.com/eepykat/">But check out my github</a>
+    <nav>
+        <ul id="navLinks">
+            <li><a href="index.html" class="active">home</a></li>
+            <li><a href="blog.html">blog</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="mobileMenu()"><i class="fa fa-bars"></i></a>
+    </nav>
+    <!-- Contain all content excluding navbar and footer -->
+    <div id="container">
+        <section id="top">
+            <div class="welcome-display">
+                <h1>
+                    <span class="welcome-text-medium">hi i'm Katarina</span><br>
+                    <span class="purple-small">or just kat</span>
+                </h1>
+                <img alt="Image of a cat from the artist Volpeon" src="images/cat.png" width="230" height="230">
+            </div>
+            <div class="button-box">
+                <div class="cta-click">
+                    <!-- <a href="mailto:contact@example.com?subject=Portfolio:" class="cat-buttons">contact me</a> -->
+                    <a href="contact.html" class="cat-buttons">contact me</a>
+                    <a href="#skills" class="cat-buttons">skills</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projectPreview">
+            <!-- This div main purpose is to keep the content somewhat in the center while allowing some things to take 100% of the width of the display -->
+            <div class="containContent">
+                <h2>projects</h2>
+                <div class="projectGrid">
+                    <article class="previewBubble">
+                        <h3>Feline.Cloud</h3>
+                        <p class="post-preview">Future Web and Game Hosting Services</p>
+                        <a href="https://feline.cloud" class="readMore">Visit</a>
+                    </article>
+                    <article class="previewBubble">
+                        <h3>owo.art</h3>
+                        <p class="post-preview">Website to showcase art by PixelCat, my friend. Check it out.</p>
+                        <a href="https://owo.art" class="readMore">Visit</a>
+                    </article>
+                    <article class="previewBubble">
+                        <h3>Minecraft Server</h3>
+                        <p class="post-preview">Minecraft server network, currently on pause.</p>
+                        <a href="https://tuxedo.network" class="readMore">Visit</a>
+                    </article>
+                    <article class="previewBubble">
+                        <h3>Homelab</h3>
+                        <p class="post-preview">Servers I host at home, mainly for testing and personal things like Home Assistant</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="skills">
+            <div class="containContent">
+                <h2>skills</h2>
+                <div id="skill-collection">
+                    <!-- Buttons Do Nothing | Fun Easter Egg -->
+                    <a href="javascript:void(0);" onclick="skillButton()" class="randomButton"><p>Linux</p></a>
+                    <a href="javascript:void(0);" onclick="skillButton()" class="randomButton"><p>SQL</p></a>
+                    <a href="javascript:void(0);" onclick="skillButton()" class="randomButton"><p>3D Printing</p></a>
+                    <a href="javascript:void(0);" onclick="skillButton()" class="randomButton"><p>JavaScript</p></a>
+                    <a href="javascript:void(0);" onclick="skillButton()" class="randomButton"><p>HTML</p></a>
+                    <a href="javascript:void(0);" onclick="skillButton()" class="randomButton"><p>Figma</p></a>
+                    <a href="javascript:void(0);" onclick="skillButton()" class="randomButton"><p>Wordpress</p></a>
+                    <a href="javascript:void(0);" onclick="skillButton()" class="randomButton"><p>Docker</p></a>
+                    <a href="javascript:void(0);" onclick="skillButton()" class="randomButton"><p>CSS</p></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="blogPreview">
+            <div class="containContent">
+                <h2>from the blog</h2>
+                <div class="dynamicBubble">
+                    <article class="blogBubble">
+                        <h3>My Cats</h3>
+                        <p class="post-preview">Here's a post dedicated to sharing some info about my cats and some pictures!....</p>
+                        <a href="catPost.html" class="readMore">read more</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutMe">
+            <div class="containContent">
+                <h2>about me</h2>
+                <article class="dynamicBubble">
+                    <img alt="Image of kat" height="128" width="128" src="https://avatars.githubusercontent.com/u/168898505?v=4">
+                    <p>meow meow meowm meow meow meow meow! meow meow meow!!!!</p>
+                </article>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <img alt="Image of a cat emoji that is white" src="images/cat.png" width="64" height="64">
+        <a href="https://github.com/eepykat">github</a>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
